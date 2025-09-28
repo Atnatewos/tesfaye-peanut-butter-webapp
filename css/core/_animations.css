@@ -1,0 +1,39 @@
+/* File: css/core/_animations.css - ENHANCED */
+/* ===== CLEAN ANIMATION SYSTEM WITH STAGGERED SUPPORT ===== */
+/* 🎯 PHASE 1 FIX: Consistent animation timing */
+/* 🎯 PHASE 1 FIX: Staggered animation support for better visual flow */
+
+/*
+  This is the starting "hidden" state for any element
+  we want to animate. It's invisible and slightly shifted down.
+*/
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px); /* Move it down by 20 pixels */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/*
+  This is the "visible" state. When JavaScript adds the
+  '.is-visible' class, the element will fade in and slide up.
+*/
+.fade-in-section.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* 🎯 FIX: Staggered animation delays for better visual hierarchy */
+/* These create a cascading effect when multiple elements animate in */
+.fade-in-section:nth-child(1) { transition-delay: 0.1s; }
+.fade-in-section:nth-child(2) { transition-delay: 0.2s; }
+.fade-in-section:nth-child(3) { transition-delay: 0.3s; }
+.fade-in-section:nth-child(4) { transition-delay: 0.4s; }
+.fade-in-section:nth-child(5) { transition-delay: 0.5s; }
+
+/* 🎯 FIX: Reduced motion support for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .fade-in-section {
+    transition: opacity 0.6s ease-out;
+    transform: none;
+  }
+}

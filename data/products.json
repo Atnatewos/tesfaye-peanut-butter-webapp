@@ -1,0 +1,71 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Classic Creamy",
+      "description": "Our signature smooth blend, perfectly roasted for a rich, consistent flavor that spreads effortlessly.",
+      "image": "https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcQxSMZYLt9SdSo2M1dgcO_xUaAVCtqcPMo-_cut2AtHXsB8E6zTE39wrkWCAAmN8vxz-xxfDNgAyfN-6-hBPDmw4N_HO14doQkL61p_k6aD",
+      "features": ["100% Natural", "No Added Sugar", "Smooth Texture"],
+      "price": "ETB 180",
+      "category": "creamy"
+    },
+    {
+      "id": 2,
+      "name": "Super Crunchy",
+      "description": "Packed with real peanut chunks for that satisfying crunch. Perfect for peanut butter enthusiasts who love texture.",
+      "image": "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSoeJ_-VNG-hc7QBO5_JD06RX_NC18hH-juUGkt0N5dL5LszhWDTdolvoZ19Bk2Ut4dvwbqtSWGwFzvMJZKKcy0zZvYR4Xov8JpAIOMEBhm",
+      "features": ["Extra Crunchy", "High Protein", "All Natural"],
+      "price": "ETB 190",
+      "category": "crunchy"
+    },
+    {
+      "id": 3,
+      "name": "Organic Natural",
+      "description": "Made with 100% certified organic peanuts. Nothing added, nothing removed. Just pure peanut goodness.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNiELKC4_dYcqfe-63jQmjWYDQQvZugYuILn8fbKhWZ0c1PcrD87dP2TmX0GhIYtYuEtYfYz0y1AgFRQ2tIvYWUOjfd2XK5XECGZvDA0R8Ew",
+      "features": ["Certified Organic", "No Additives", "Single Ingredient"],
+      "price": "ETB 220",
+      "category": "organic"
+    },
+    {
+      "id": 4,
+      "name": "Honey Roasted",
+      "description": "A touch of natural honey blended with our premium roasted peanuts for a subtly sweet experience.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSSrzoScGqpboLbCH6ZRc4huPUrP8v5o_cgMD_X0C1rAeTC3nU4KDogl5N9tlzB5rp7n_jtZ78ckGCHI9NuxlkETo-Z3hOkFuOZSGjduBz_",
+      "features": ["With Natural Honey", "Sweet & Savory", "No Refined Sugar"],
+      "price": "ETB 200",
+      "category": "flavored"
+    },
+    {
+      "id": 5,
+      "name": "Spicy Chili",
+      "description": "A unique blend featuring a hint of Ethiopian chili for those who love a little kick with their peanut butter.",
+      "image": "https://domf5oio6qrcr.cloudfront.net/medialibrary/1980/peanut-butter-healthy.jpg",
+      "features": ["Ethiopian Chili", "Bold Flavor", "Unique Blend"],
+      "price": "ETB 195",
+      "category": "flavored"
+    },
+    {
+      "id": 6,
+      "name": "Protein Plus",
+      "description": "Enhanced with extra protein for athletes and health-conscious consumers. Powerful nutrition meets great taste.",
+      "image": "https://www.allrecipes.com/thmb/S6C_DedDxrMYUzkVnQnzj-NxXKs=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/AR-9999-peanut-butter-bars-ddmfs-2x1-beauty-89922911041e4cc49951385be469b5b9.jpg",
+      "features": ["High Protein", "Energy Boost", "Athlete Formula"],
+      "price": "ETB 240",
+      "category": "specialty"
+    },
+    {
+      "id": 7,
+      "name": "Chocolate Swirl",
+      "description": "Creamy peanut butter with rich dark chocolate swirls. A decadent treat for chocolate lovers.",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRd3WlkNahxKvbnLwRdyq64d_zsPUrmOBPCaw&s",
+      "features": [
+        "Dark Chocolate",
+        "No Artificial Sweeteners",
+        "Decadent Treat"
+      ],
+      "price": "ETB 210",
+      "category": "flavored"
+    }
+  ]
+}

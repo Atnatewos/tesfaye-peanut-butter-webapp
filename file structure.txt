@@ -1,0 +1,46 @@
+📁 tesfaye-peanut-butter-mfg/
+├── 📄 .gitignore                    # Git ignore file
+├── 📄 README.md                     # Project documentation
+├── 📄 index.html                    # Homepage (using _navbar-final.css)
+├── 📄 about.html                    # About page (using main.css)
+├── 📄 products.html                 # Products page 
+├── 📄 quality.html                  # Quality page
+├── 📄 contact.html                  # Contact page (using main.css)
+│
+📁 css/
+│   ├── 📄 main.css                  # Main stylesheet (imports multiple files)
+│   │
+│   ├── 📁 core/
+│   │   ├── 📄 _reset.css            # CSS reset
+│   │   ├── 📄 _variables.css        # Color variables, spacing, etc.
+│   │   ├── 📄 _base.css             # Base styles
+│   │   ├── 📄 _layout.css           # Layout utilities
+│   │   └── 📄 _animations.css       # Animation styles
+│   │
+│   └── 📁 components/
+│       ├── 📄 _navbar.css           # Original navbar
+│       ├── 📄 _navbar-homepage.css  # Homepage-specific navbar
+│       ├── 📄 _navbar-unified.css   # Unified navbar (missing content)
+│       ├── 📄 _navbar-final.css     # New final navbar
+│       ├── 📄 _hero.css             # Hero section
+│       ├── 📄 _homepage-layout.css  # Homepage layout
+│       ├── 📄 _buttons.css          # Button styles
+│       ├── 📄 _cards.css            # Card styles
+│       ├── 📄 _forms.css            # Form styles
+│       ├── 📄 _footer.css           # Footer styles
+│       └── 📄 _layout-components.css # Layout components
+│
+📁 js/
+│   ├── 📄 main.js                   # Main JavaScript (original)
+│   ├── 📄 homepage.js               # Homepage-specific JS
+│   ├── 📄 navigation-unified.js     # Unified navigation JS
+│   ├── 📄 navbar-final.js           # New final navbar JS
+│   └── 📄 products.js               # Products page JavaScript
+│
+📁 data/
+│   └── 📄 products.json             # Product data
+│
+📁 images/
+│   └── 📁 gallery/
+│       ├── 📄 wide angle hero image2.png
+│       └── 📄 wide angle hero image-mobile1.png

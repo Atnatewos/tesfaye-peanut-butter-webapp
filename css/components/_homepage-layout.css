@@ -1,0 +1,142 @@
+/* File: css/components/_homepage-layout.css - FIXED */
+/* ===== PROFESSIONAL HOMEPAGE LAYOUT - NO GAP FIX ===== */
+
+.homepage .main-content {
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* 🎯 CRITICAL FIX: Hero section should have no extra margins */
+.homepage .hero {
+    margin-bottom: 0;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+/* About snippet section */
+.homepage .about-snippet {
+    padding: 6rem 0;
+    background: var(--color-light);
+}
+
+.homepage .about-snippet__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.homepage .about-snippet__title {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+}
+
+.homepage .about-snippet__description {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--color-dark-muted);
+    max-width: 800px;
+    margin: 0 auto 2rem;
+}
+
+/* Enhanced featured products integration */
+.homepage .featured-products {
+    padding: 6rem 0;
+    background: var(--color-background-alt);
+}
+
+.homepage .featured-products__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+.homepage .featured-products__title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--color-primary);
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.homepage .featured-products__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+/* Use product-card styles from _cards.css */
+.homepage .product-card {
+    background: var(--color-light-pure);
+    border-radius: var(--border-radius-lg);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.homepage .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.homepage .product-card__title {
+    font-size: 1.5rem;
+    color: var(--color-dark);
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.homepage .product-card__description {
+    color: var(--color-dark-muted);
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+/* Enhanced responsive adjustments */
+@media (max-width: 768px) {
+    .homepage .about-snippet {
+        padding: 4rem 0;
+    }
+    
+    .homepage .about-snippet__title {
+        font-size: 2rem;
+    }
+    
+    .homepage .about-snippet__description {
+        font-size: 1rem;
+        padding: 0 1rem;
+    }
+    
+    .homepage .featured-products {
+        padding: 4rem 0;
+    }
+    
+    .homepage .featured-products__title {
+        font-size: 2rem;
+    }
+    
+    .homepage .featured-products__grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+    }
+    
+    .homepage .product-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Tablet responsive adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .homepage .featured-products__grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+}

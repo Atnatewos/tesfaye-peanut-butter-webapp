@@ -1,0 +1,108 @@
+/* File: css/components/_layout-components.css - FIXED */
+/* ===== CROSS-PAGE CONSISTENCY - FIXED NAVBAR SPACING ===== */
+
+/* 🎯 CRITICAL FIX: Add top padding to main content for non-homepage pages */
+main {
+    min-height: calc(100vh - 200px);
+    padding: var(--space-xl) 0;
+    
+    /* 🎯 CRITICAL FIX: Add top spacing for content pages */
+    padding-top: calc(var(--space-xl) + 70px); /* Content padding + navbar height */
+}
+
+/* 🎯 CRITICAL FIX: Homepage main should have no extra top padding */
+.homepage main {
+    padding-top: 0;
+}
+
+.container > h1 {
+    margin-bottom: var(--space-lg);
+    text-align: center;
+    color: var(--color-primary);
+}
+
+.container > p:first-of-type {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto var(--space-xl) auto;
+    color: var(--color-dark-muted);
+    line-height: 1.7;
+}
+
+/* Consistent section spacing for all pages */
+section {
+    margin: var(--space-xl) 0;
+}
+
+/* Enhanced content page styling */
+.content-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content-section h2 {
+    color: var(--color-primary);
+    margin-top: var(--space-lg);
+    margin-bottom: var(--space-md);
+}
+
+.content-section p {
+    margin-bottom: var(--space-md);
+    line-height: 1.7;
+}
+
+.content-section strong {
+    color: var(--color-primary);
+    font-weight: var(--font-weight-semibold);
+}
+
+/* Quality page specific enhancements */
+.quality-pillars {
+    background: var(--color-background-alt);
+    padding: var(--space-lg);
+    border-radius: var(--border-radius);
+    margin: var(--space-lg) 0;
+}
+
+.quality-pillars h3 {
+    color: var(--color-primary);
+    margin-bottom: var(--space-md);
+}
+
+/* About page enhancements */
+.about-story {
+    line-height: 1.8;
+}
+
+.about-story p {
+    margin-bottom: var(--space-lg);
+}
+
+/* Responsive adjustments for all pages */
+@media (max-width: 768px) {
+    main {
+        padding: var(--space-lg) 0;
+        padding-top: calc(var(--space-lg) + 70px); /* Adjusted for mobile */
+    }
+    
+    .container > h1 {
+        font-size: clamp(2rem, 5vw, 3rem);
+    }
+    
+    .content-section {
+        padding: 0 var(--space-md);
+    }
+    
+    .quality-pillars {
+        padding: var(--space-md);
+        margin: var(--space-md) 0;
+    }
+}
+
+/* 🎯 CRITICAL FIX: Desktop navbar height adjustment */
+@media (min-width: 769px) {
+    main {
+        padding-top: calc(var(--space-xl) + 80px); /* Taller desktop navbar */
+    }
+}

@@ -1,0 +1,59 @@
+/* File: css/core/_variables.css - ENHANCED */
+:root {
+  /* == ENHANCED PEANUT BUTTER COLOR PALETTE == */
+  --color-primary: #8b4513; /* Rich brown - main brand color */
+  --color-primary-light: #a0522d; /* Lighter brown */
+  --color-primary-dark: #5d4037; /* Dark brown */
+  --color-accent: #ffa500; /* Warm orange - like peanut color */
+  --color-accent-light: #ffb74d; /* Light orange */
+  --color-accent-dark: #f57c00; /* Dark orange */
+
+  /* == NEUTRAL COLORS == */
+  --color-light: #fffbf5; /* Warm cream background */
+  --color-light-pure: #ffffff; /* Pure white */
+  --color-dark: #2c1810; /* Dark chocolate brown */
+  --color-dark-muted: #5d4037; /* Muted brown */
+  --color-background-alt: #f5f0eb; /* Light beige for alternate sections */
+  --color-border: #d7ccc8; /* Light brown border */
+  --color-success: #388e3c; /* Green for success states */
+
+  /* Homepage specific colors */
+  --homepage-nav-bg: transparent;
+  --homepage-nav-text: #ffffff;
+  --homepage-nav-text-scrolled: #2c1810;
+  --homepage-nav-bg-scrolled: rgba(255, 255, 255, 0.95);
+
+  /* == TYPOGRAPHY == */
+  --font-family-primary: "Poppins", sans-serif;
+  --font-size-base: 18px;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --line-height-base: 1.7;
+
+  /* == SPACING == */
+  --space-xs: 8px;
+  --space-sm: 16px;
+  --space-md: 24px;
+  --space-lg: 48px;
+  --space-xl: 80px;
+  --space-xxl: 120px;
+
+  /* == LAYOUT == */
+  --container-width: 1200px;
+
+  /* == BORDERS & SHADOWS == */
+  --border-radius: 12px;
+  --border-radius-lg: 20px;
+  --shadow-sm: 0 4px 12px rgba(139, 69, 19, 0.08);
+  --shadow-md: 0 8px 24px rgba(139, 69, 19, 0.12);
+  --shadow-lg: 0 16px 40px rgba(139, 69, 19, 0.15);
+
+  /* == TRANSITIONS == */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+  --transition-slow: 0.5s ease;
+}

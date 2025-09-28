@@ -1,0 +1,82 @@
+/* File: css/components/_hero.css - FIXED GAP */
+/* ===== HERO SECTION - NO GAP FIX ===== */
+
+.hero {
+    /* Background styling */
+    background-image: linear-gradient(rgba(44, 24, 16, 0.6), rgba(44, 24, 16, 0.4)), url('../../images/gallery/wide angle hero image2.png');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    
+    /* 🎯 CRITICAL FIX: Use 100vh without body padding */
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+    /* Color and positioning */
+    color: var(--color-light-pure);
+    position: relative;
+    margin: 0;
+    padding: 0;
+    
+    /* 🎯 CRITICAL FIX: Ensure hero starts at the very top */
+    margin-top: 0;
+}
+
+.hero__container {
+    max-width: 1200px;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 2;
+    
+    /* 🎯 CRITICAL FIX: Add top spacing to account for navbar */
+    margin-top: 70px; /* Push content down below navbar */
+}
+
+.hero__title {
+    font-size: clamp(2.5rem, 6vw, 4.5rem);
+    font-weight: var(--font-weight-extrabold);
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    line-height: 1.2;
+    color: var(--color-light-pure);
+}
+
+.hero__description {
+    font-size: clamp(1.2rem, 2.5vw, 1.5rem);
+    margin-bottom: 2.5rem;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+    color: var(--color-light-pure);
+}
+
+.hero__cta {
+    font-size: 1.1rem;
+    padding: 1rem 2rem;
+}
+
+/* 🎯 CRITICAL FIX: Mobile adjustments */
+@media (max-width: 767px) {
+    .hero {
+        background-image: linear-gradient(rgba(44, 24, 16, 0.6), rgba(44, 24, 16, 0.4)), url('../../images/gallery/wide angle hero image-mobile1.png');
+        background-attachment: scroll;
+        min-height: 100vh;
+    }
+    
+    .hero__container {
+        padding: 0 1.5rem;
+        margin-top: 70px; /* Same as mobile navbar height */
+    }
+}
+
+/* 🎯 CRITICAL FIX: Desktop adjustments */
+@media (min-width: 769px) {
+    .hero__container {
+        margin-top: 80px; /* Taller navbar on desktop */
+    }
+}

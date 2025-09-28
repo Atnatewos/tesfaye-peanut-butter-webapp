@@ -1,0 +1,21 @@
+/* Update File: css/main.css - FINAL ORDER */
+/* File: css/main.css - COMPLETE OPTIMIZED VERSION */
+
+/* 1. CORE FOUNDATION */
+@import url('core/_reset.css');
+@import url('core/_variables.css');
+@import url('core/_base.css');
+@import url('core/_layout.css');
+@import url('core/_animations.css');
+@import url('core/_compatibility.css');
+@import url('core/_optimizations.css'); /* 🎯 PHASE 3: Add optimizations */
+
+/* 2. COMPONENTS */
+@import url('components/_nav-main.css');
+@import url('components/_buttons.css');
+@import url('components/_cards.css');
+@import url('components/_forms.css');
+@import url('components/_footer.css');
+@import url('components/_hero.css');
+@import url('components/_layout-components.css');
+@import url('components/_homepage-layout.css');
